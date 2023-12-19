@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/register.css" />
+    <link rel="stylesheet" href="\vendor\bootstrap\css\bootstrap.min.css" />
+  </head>
+
+  <body class="">
+    <main class="containers col-lg-8 row-lg-6 col-12 row-12">
+      <div class="d-flex flex-column flex-lg-row">
+        <section
+          class="d-flex flex-column justify-content-center align-items-center text-center bg-welcome-reg-banner"
+        >
+          <h1 class="welcome">Welcome !</h1>
+          <h3 class="mb-3 coder-tech">coder's Tech</h3>
+          <p class="small-text">
+            we're excited to welcome you to our community! Whether you're an
+            aspiring professional, an experienced developer, or someone looking
+            to explore the world of technology, you're in the right place.
+          </p>
+        </section>
+        <section class="reg-form-container">
+          <h2 class="reg-text">Register Form</h2>
+          <%= include ("./partials/messages"); %>
+          <form id="form1" action="/users/register" method="post">
+            <div class="input-field">
+              <input
+                type="text"
+                name="name"
+                id="username"
+                placeholder="Enter Your Username"
+                required
+                class="border-bottom border-primary"
+                value="<%= typeof name != 'undefined' ? name : '' %>"
+              />
+            </div>
+            <div class="input-field">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Your Email"
+                required
+                class="border-bottom border-primary"
+                value="<%= typeof email != 'undefined' ? email : '' %>"
+              />
+            </div>
+            <div class="input-field">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter Your password"
+                required
+                class="border-bottom border-primary"
+                value="<%= typeof password != 'undefined' ? password : '' %>"
+              />
+            </div>
+            <div class="input-field">
+              <input
+                type="password"
+                name="password2"
+                id="passwordConf"
+                placeholder="Enter Your confirmPassword"
+                required
+                class="border-bottom border-primary"
+                value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+              />
+            </div>
+
+            <input type="submit" value="Register" />
+          </form>
+
+          <div class="footer">
+            <div>
+              <span class="foot"
+                >Already Registered! <a href="/users/login">Login</a></span
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="\vendor\bootstrap\css\bootstrap.min.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-dark-blue">
+    <main class="containers col-lg-8 row-lg-6 col-12 row-12">
+      <div class="d-flex flex-column flex-lg-row w-100">
+        <section
+          class="d-flex flex-column justify-content-center align-items-center text-center bg-reg-banner"
+        >
+          <h2>Register Now !</h2>
+          <p class="mt-0">
+            Join our community! Register now to unlock exciting features and
+            opportunities.
+          </p>
+          <form action="">
+            <input type="submit" value="Register" />
+          </form>
+        </section>
+        <section
+          class="form-container d-flex justify-content-center align-items-center"
+        >
+          <div class="text-center">
+            <h1 class="brand">Coder's Tech</h1>
+            <h3 class="my-3 login">Log In Form</h3>
+            <%- include ("./partials/messages") %>
+            <form id="form1" action="/users/login" method="post">
+              <div class="input-field mt-4">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter Your Email *"
+                  class="border-bottom border-primary"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Enter Your Password *"
+                  required
+                  class="border-bottom border-primary"
+                />
+              </div>
+
+              <p class="login my-0">or</p>
+              <div class="login-icons">
+                <img
+                  src="/assets/images/google.png"
+                  alt="Google Logo"
+                  class="login-icon"
+                />
+                <img
+                  src="/assets/images/fb.png"
+                  alt="Facebook Logo"
+                  class="login-icon"
+                />
+                <img
+                  src="/assets/images/github.png"
+                  alt="Twitter Logo"
+                  class="login-icon"
+                />
+              </div>
+
+              <input type="submit" value="Login" />
+            </form>
+
+            <div class="footer">
+              <div>
+                <span class="foot"
+                  >Don't have an account?
+                  <a href="/users/register">Register</a></span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
