@@ -29,9 +29,6 @@ If the installation was successful, you should be able to run the following comm
 
 # Theme
 
-## Harkirat Technologies
-
-- Created a Web App for a Service based Company which offers IT Solutions to Clients.
 
 # Functionalities
 
@@ -65,34 +62,24 @@ If the installation was successful, you should be able to run the following comm
 
 - Flash messages are implemented to inform user about wrong password, User Already Exist etc.
 
-!["show_name"](./public/assets/images/contact_with_flash.png)
 
 ## Responsive Frontend Using HTML, CSS, JS , Bootstrap
 
 ### Home Page
 
-!["show_name"](./public/assets/images/home_responsive.png)
-!["show_name"](./public/assets/images/home%20with%20username.png)
-
 ### Services
 
-!["show_name"](./public/assets/images/services_page.png)
-!["show_name"](./public/assets/images/services_responsive.png)
+
 
 ### Our Work Page
 
-!["show_name"](./public/assets/images/responsive%20work.png)
-!["show_name"](./public/assets/images/work_page.png)
 
 ### Team
 
-!["show_name"](./public/assets/images/Team_page.png)
-!["show_name"](./public/assets/images/responsive%20team.png)
+
 
 ### Contact Us
 
-!["show_name"](./public/assets/images/contact_with%20_info.png)
-!["show_name"](./public/assets/images/responsive%20contact.png)
 
 ## Contact Us form Stores data in Contact-form Collection in Mongo DB.
 
